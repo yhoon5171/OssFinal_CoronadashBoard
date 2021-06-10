@@ -1,0 +1,390 @@
+<html lang="en">
+<title>COVID-19 DashBoard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<body class="w3-light-grey">
+
+<!-- ---------------------------------메뉴판 -------------------------->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-padding-large"><i class='fas fa-virus' style='font-size:30px'></i>CoronaDashBoard</a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-small">About us</a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-small">Regional Cases</a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About us</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Regional Cases</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+
+<!-- ----------------------------------슬라이드쇼---------------------------------- -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/image1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>CoronaDashBoard</h3>
+      <p><b>In December 2019, a novel coronavirus strain (SARS-CoV-2) emerged in the city of Wuhan, China. We seek to monitor the spread of COVID-19 in South Korea.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/image2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>How it is transmitted</h3>
+      <p><b>The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/image3.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Social Distancing</h3>
+      <p><b>Physical distancing helps limit the spread of COVID-19 – this means we keep a distance of at least 1m from each other and avoid spending time in crowded places or in groups.</b></p>    
+    </div>
+  </div>
+</div>
+
+<!-- --------------------------------------------------sidebar menu-------------------------------------------------- -->
+
+<!-- Sidebar/menu -->
+
+
+<!-- ---------------------------------BODY-------------------------------- -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> 발생동향</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+         <h3>42,766</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>확진환자</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-home w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>90,129</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>격리중</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-plus w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>31,814</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>격리해제</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-black w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>580</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>사망자</h4>
+      </div>
+    </div>
+  </div>
+  
+    <div class="w3-container">
+    <h5>전일대비확진환자 증감</h5>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-orange" style="width:70%">+1030</div>
+    </div>
+    </div>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5>KOREA</h5>
+        <img src="./img/korea.jpg" style="width:100%">
+      </div>
+      <div class="w3-twothird">
+        <h5>DashBoard</h5>
+        <table class="w3-table w3-striped w3-white">
+        <tr><th></th><th>지역</th><th>확진환자</th><th>격리중</th><th>격리해제</th><th>사망자</th><th>일일 확진자</th><th>Update</th></tr>
+        <c:forEach var="patient" items="${list}">
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>대한민국</td>
+            <td>145,692</td>  
+            <td>7,541</td>  
+            <td>136,174</td>  
+            <td>1,977</td>
+            <td>602</td>
+            <td><a href="edit.html">Update</a></td>  
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>서울</td>
+            <td>45,679</td>  
+            <td>2,754</td>  
+            <td>42,426</td>  
+            <td>499</td>
+            <td>183</td>
+            <td><a href="edit.html">Update</a></td>  
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>부산</td>
+            <td>5,844</td>  
+            <td>234</td>  
+            <td>5,486</td>  
+            <td>124</td>
+            <td>16</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>대구</td>
+            <td>10,326</td>  
+            <td>454</td>  
+            <td>9,650</td>  
+            <td>222</td>
+            <td>44</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>인천</td>
+            <td>6,357</td>  
+            <td>202</td>  
+            <td>6,094</td>  
+            <td>61</td>
+            <td>23</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>광주</td>
+            <td>2,849</td>  
+            <td>64</td>  
+            <td>2,763</td>  
+            <td>22</td>
+            <td>7</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>대전</td>
+            <td>2,269</td>  
+            <td>235</td>  
+            <td>2,010</td>  
+            <td>24</td>
+            <td>25</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>울산</td>
+            <td>2,648</td>  
+            <td>72</td>  
+            <td>2,536</td>  
+            <td>40</td>
+            <td>6	</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>세종</td>
+            <td>497</td>  
+            <td>24</td>  
+            <td>472</td>  
+            <td>1</td>
+            <td>3</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>경기</td>
+            <td>40,622</td>  
+            <td>2,083</td>  
+            <td>37,896</td>  
+            <td>643</td>
+            <td>161</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>강원</td>
+            <td>3,308</td>  
+            <td>164</td>  
+            <td>3,093</td>  
+            <td>51</td>
+            <td>30</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>충북</td>
+            <td>3,067</td>  
+            <td>155</td>  
+            <td>2,844</td>  
+            <td>68</td>
+            <td>23</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>충남</td>
+            <td>3,620</td>  
+            <td>151</td>  
+            <td>3,430</td>  
+            <td>39</td>
+            <td>5</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>전북</td>
+            <td>2,283</td>  
+            <td>77</td>  
+            <td>2,148</td>  
+            <td>58</td>
+            <td>6</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>전남</td>
+            <td>1,533</td>  
+            <td>132</td>  
+            <td>1,386</td>  
+            <td>15</td>
+            <td>6	</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>경북</td>
+            <td>4,784</td>  
+            <td>162</td>  
+            <td>4,537</td>  
+            <td>85</td>
+            <td>13</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>경남</td>
+            <td>4,947	</td>  
+            <td>282</td>  
+            <td>4,646</td>  
+            <td>19</td>
+            <td>39</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>제주</td>
+            <td>1,158</td>  
+            <td>145</td>  
+            <td>1,012</td>  
+            <td>1</td>
+            <td>7</td>
+            <td><a href="edit.html">Update</a></td> 
+          </tr>
+          </c:forEach>  
+        </table>
+        <p style="font-size: 14px;"><b>집계 기준:&nbsp;&nbsp; 2021-06-09 01:27:09 </b></p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-container w3-dark-grey w3-padding-32">
+    <h4>사회적 거리두기</h4>
+    <div class="w3-row">
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-green">1단계</h5>
+        <p>생활 속 거리두기</p>
+        <p>이용인원 제한 등 핵심방역수칙 의무화 (마스크 착용, 출입자 명단, 환기 및 소독)</p>
+        <p>일상생활 및 사회경제적 활동 유지, 방역수칙 준수</p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-orange">2단계</h5>
+        <p>지역 유행 급속 전파, 전국적 확산 개시</p>
+        <p>유흥시설 5종 집합금지, 100인 이상 집합 금지</p>
+        <p>위험지역은 불필요한 모임 자제, 다중이용시설 이용 자제</p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-red">3단계</h5>
+        <p>전국적 대유행</p>
+        <p>필수시설 외 집합 금지, 10인 이상 집합 금지</p>
+        <p>원칙적으로 집에 머무르며 다른 사람과 접촉 최소화</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <p>신고상담보건소질병관리청 콜센터 1339지역번호 + 120지역번호 + 114</p>
+    <p>Copyright ⓒ By HandongCSEE. All Rights Reserved. <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+//Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+//Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+</script>
+
+</body>
+</html>
+
